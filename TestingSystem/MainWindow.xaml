@@ -6,15 +6,24 @@
         xmlns:local="clr-namespace:TestingSystem"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <TabControl>
-        <TabItem Header="Создание тестов">
-            <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Button Content="Создание тестов" Padding="10" Margin="10"
-                        Click="Button_Click"/>
-                <Button Content="Редактирование тестов" Padding="10" Margin="10" IsEnabled="False"/>
-            </WrapPanel>
-        </TabItem>
-        <TabItem Header="Другой модуль" IsEnabled="False"/>
-    </TabControl>    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <TabControl>
+            <TabItem Header="Создание тестов">
+                <!--<WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Button Content="Создание тестов" Padding="10" Margin="10"
+                            Click="Button_Click"/>
+                    <Button Content="Редактирование тестов" Padding="10" Margin="10" IsEnabled="False"/>
+                </WrapPanel>-->
+            </TabItem>
+            <TabItem Header="Другой модуль" IsEnabled="False"/>
+        </TabControl>
+
+        <Frame x:Name="StartFrame" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+    </Grid>
 
 </Window>

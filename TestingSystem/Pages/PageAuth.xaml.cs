@@ -12,25 +12,27 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TestingSystem.Pages;
 
-namespace TestingSystem
+namespace TestingSystem.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для PageAuth.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PageAuth : Page
     {
-        public static Frame _frame = null;
-
-        public MainWindow()
+        public PageAuth()
         {
             InitializeComponent();
-            _frame = StartFrame;
-
-            StartFrame.Navigate(new PageAuth());
         }
 
-        
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow._frame.Navigate(new PageUserMenu());
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainWindow._frame.Navigate(new PageUserRegistration());
+        }
     }
 }

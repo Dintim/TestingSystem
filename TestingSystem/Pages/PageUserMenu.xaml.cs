@@ -12,25 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TestingSystem.Pages;
 
-namespace TestingSystem
+namespace TestingSystem.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для PageUserMenu.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PageUserMenu : Page
     {
-        public static Frame _frame = null;
-
-        public MainWindow()
+        public PageUserMenu()
         {
             InitializeComponent();
-            _frame = StartFrame;
-
-            StartFrame.Navigate(new PageAuth());
         }
-
-        
     }
 }
