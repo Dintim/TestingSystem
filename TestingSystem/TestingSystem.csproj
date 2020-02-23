@@ -72,6 +72,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PageCreateQuestions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PageCreateTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -91,6 +95,9 @@
     <Compile Include="Models\Test.cs" />
     <Compile Include="Pages\PageAuth.xaml.cs">
       <DependentUpon>PageAuth.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageCreateQuestions.xaml.cs">
+      <DependentUpon>PageCreateQuestions.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageCreateTest.xaml.cs">
       <DependentUpon>PageCreateTest.xaml</DependentUpon>
@@ -125,6 +132,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestingSystem.Lib\TestingSystem.Lib.csproj">
+      <Project>{54c0dce4-e975-4aa6-882b-0324badd9330}</Project>
+      <Name>TestingSystem.Lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

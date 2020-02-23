@@ -12,6 +12,7 @@ namespace TestingSystem.Lib
         public string Name { get; set; }
         public string Category { get; set; }
         public string Description { get; set; }
+        public int QuestionsCnt { get; set; }
         public List<Question> Questions { get; set; }        
     }
 }

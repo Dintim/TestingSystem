@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TestingSystem.Lib;
 using TestingSystem.Pages;
 
 namespace TestingSystem
@@ -22,6 +23,8 @@ namespace TestingSystem
     public partial class MainWindow : Window
     {
         public static Frame _frame = null;
+        public static Test _test = new Test();
+        public static string _path = @"C:\Tests";
 
         public MainWindow()
         {

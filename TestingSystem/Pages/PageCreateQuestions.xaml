@@ -1,4 +1,4 @@
-﻿<Page x:Class="TestingSystem.Pages.PageUserMenu"
+﻿<Page x:Class="TestingSystem.Pages.PageCreateQuestions"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,11 +6,9 @@
       xmlns:local="clr-namespace:TestingSystem.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageUserMenu">
-
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button Content="Создать тест" Width="200" Height="30" FontSize="16" Margin="5"
-                Click="Button_Click"/>
-        <Button Content="Посомтреть все тесты" Width="200" Height="30" FontSize="16" Margin="5" IsEnabled="False"/>
+      Title="PageCreateQuestions">
+    <StackPanel x:Name="sPanel">
+        
     </StackPanel>
+    
 </Page>
